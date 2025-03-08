@@ -1,0 +1,738 @@
+    /* html, body{
+        font-family: Arial, Helvetica, sans-serif; 
+    } */
+    
+    /*  */
+    /*  */
+
+    html::-webkit-scrollbar {
+        display: none;
+        /* width: 7px;
+        background-color: transparent; */
+    }
+    /* html::-webkit-scrollbar-thumb {
+        background-color: #FFC107;
+        border-radius: 0px;
+        width: 8px;
+    } */
+    /* .scrollbar-custom {
+        overflow-y: scroll;
+    }
+    .scrollbar-custom::-webkit-scrollbar {
+        width: 7px;
+    }
+    .scrollbar-custom::-webkit-scrollbar-thumb {
+        background-color: #FFC107;
+    } */
+
+    .btn-custom {
+        background-color: #FFC107;
+        border: 1px solid #FFC107;
+        padding: 1vh 7vh;
+        border-radius: 7px;
+        height: 9vh;
+        text-decoration: none;
+        transition: 0.3s;
+        box-shadow: 0px 0px 8px #212121;
+    }
+    .btn-custom-outline {
+        background-color: transparent;
+        border: 1px solid #FFC107;
+        padding: 1vh 2vh;
+        border-radius: 7px;
+        color: #FFC107;
+        height: 9vh;
+        text-decoration: none;
+        transition: 0.3s;
+        box-shadow: 0px 0px 8px #212121;
+    }
+    .btn-custom-outline i {
+        transform: rotate(180deg);
+    }
+    .btn-custom i,
+    .btn-custom-outline i {
+        transition: 1s;
+    }
+    .btn-custom:hover {
+        background-color: rgb(255, 200, 34);
+    }
+    .btn-custom-outline:hover {
+        background-color: #FFC107;
+        color: #212121;
+    }
+    .btn-custom:hover i{
+        transform: translateX(100%);
+    }
+    .btn-custom-outline:hover i {
+        transform: rotate(720deg);
+    }
+    .content-terbaru {
+        /* background-color: red; */
+        padding: 25px;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, #D0F0FE, #ffffff, #ffffff);
+    }
+    .content-terbaru h4.judul {
+        color: #2A5044;
+        background-color: #FFC107;
+        width: fit-content;
+        border-radius: 0px 20px 20px 20px;
+        padding: 1vh 4vh;
+    }
+    .detail-modal-bg {
+        height: 40vh;
+        width: 100%;
+    }
+    .detail-paket {
+        font-weight: bolder;
+    }
+    .text-green-custom {
+        color: #2A5044;
+    }
+    .sub-detail {
+        background: linear-gradient(to bottom, #D2F1FE, transparent, #ebf4f8);
+        padding: 20px;
+        border-radius: 10px;
+        color: #2A5044;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+    @media (max-width: 800px) {
+        .sub-detail {
+            font-size: 0.98em;
+        }
+    }
+    .sub-detail hr {
+        color: #2A5044;
+    }
+    .sub-detail .judul-sub-detail {
+        background-color: #FFC107;
+        padding: 1.3vh 4vh;
+        width: fit-content;
+        border-radius: 0px 12px 12px 12px;
+    }
+    .sub-detail .content-sub-detail {
+        background-color: #ffffff;
+    }
+    .sub-detail p.fasilitas {
+        background-color: #2A5044;
+        color: #ffffff;
+        padding: 1vh 4vh;
+        border-radius: 0px 12px 0px 12px;
+        width: 100%;
+    }
+    /* .content-terbaru .card {
+        box-shadow: 1px 1px 5px #2121218f;
+    } */
+    img.img-brand {
+        width: 100px;
+        margin-top: -3vh;
+        filter: drop-shadow(0px 0px 8px #212121);
+    }
+    @media (max-width:576px) {
+        .btn-custom {
+            background-color: #FFC107;
+            padding: 0.9vh 3.5vh;
+            border-radius: 7px;
+            height: 9vh;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0px 0px 8px #212121;
+        }
+        img.img-brand {
+            width: 80px;
+            margin-top: -3vh;
+            filter: drop-shadow(0px 0px 8px #212121);
+        }
+    }
+
+    @media (max-width: 800px) {
+        .btn-custom {
+            background-color: #FFC107;
+            padding: 0.9vh 3.5vh;
+            border-radius: 7px;
+            height: 9vh;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0px 0px 8px #212121;
+        }
+        .navbar-responsive-custom {
+            overflow-x: scroll;
+            scrollbar-width: none;
+            width: 95%;
+            margin: auto;
+        }
+        .navbar-responsive-custom::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+        ul.navigation-bar li span{
+            font-size: 1.1em;
+            white-space: nowrap;
+            /* overflow-x: scroll; */
+        }
+    }
+
+    .welcome-text-custom {
+        text-shadow: 0px 0px 10px #212121;
+    }
+
+    .separator {
+        margin-top: 5vh;
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .separator hr {
+        /* display: none; */
+        margin-top: -3vh;
+        border-top: 2px solid #7D858C;
+    }
+
+    .separator .ask-about-account {
+        position: absolute;
+        background: #ffffff;
+        padding: 0px 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: auto;
+        z-index: 99;
+        /* margin-top: -2vh; */
+        top: -2vh;
+    }
+
+    .pilih-transit {
+        padding-right: 0;
+    }
+    .pilih-direct {
+        padding-left: 0;
+    }
+
+    @media (max-width: 576px) {
+        .pilih-transit, .pilih-direct {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    @media (max-width: 876px) {
+        .pilih-transit, .pilih-direct {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    /* default */
+    .label-custom-checkbox {
+        width: 100%;
+        padding: 0.85vh 5vh;
+        border: 1px solid #DEE2E6;
+        border-radius: 0px 12px 0px 12px;
+        font-size: 1.1em;
+        color: #7D7F81;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    #label-custom-checkbox-tiket-pesawat-checked, #label-custom-checkbox-visa-checked, #label-custom-checkbox-akomodasi-checked, #label-custom-checkbox-makan-checked, 
+    #label-custom-checkbox-umroh-checked, #label-custom-checkbox-paket-tour-checked,#label-custom-checkbox-airport-checked, #label-custom-checkbox-bus-checked, #label-custom-checkbox-zamzam-checked, #label-custom-checkbox-passport-checked,
+    #custom-radio-direct-checked,
+    #custom-radio-transit-checked {
+        width: 100%;
+        padding: 0.85vh 5vh;
+        /* border: 1px solid #315E50; */
+        border-radius: 0px 12px 0px 12px;
+        font-size: 1.1em;
+        background-color: #315E50;
+        color: #ffffff;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .label-custom-checkbox:hover {
+        background-color: #315E50;
+        color: #ffffff;
+    }
+
+    label.custom-radio{
+        width: 100%;
+        padding: 0.85vh 5vh;
+        border: 1px solid #DEE2E6;
+        border-radius: 0px 12px 0px 12px;
+        font-size: 1.1em;
+        color: #7D7F81;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    label.custom-radio:hover{
+        background-color: #315E50;
+        color: #ffffff;
+    }
+
+    input#custom-radio-direct-input, input#custom-radio-transit-input{
+        display: none;
+    }
+
+    .custom-checkbox {
+        display: none;
+    }
+
+    .canvas {
+        height: 11vh;
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        background: #315E50;
+        width: 100%;
+    }
+
+    .btn:active {
+        transform: scale(1);
+    }
+
+    .canvas-header-login{
+        height: 11.3vh;
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        background: #315E50;
+        width: 100%;
+    }
+
+    .vector {
+        height: 11vh;
+        background-image: url('../assets/brand/Vector.svg');
+        background-size: 30%;
+        background-position: center;
+        width: 100%;
+    }
+
+    .vector-header-login{
+        height: 100%;
+        background-image: url('../assets/brand/Vector.svg');
+        background-size: 120%;
+        background-position: top;
+        width: 100%;
+    }
+
+    .vector-header-daftar{
+        height: 100%;
+        background-image: url('../assets/brand/Vector.svg');
+        background-size: 30%;
+        background-position: top;
+        width: 100%;
+    }
+
+    .canvas-header-login {
+        width: 100%;
+    }
+
+    /* .navbar-brand-custom {
+        background: linear-gradient(to left, #ffffff, #ffbf00);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    } */
+
+    .nav-new{
+        box-shadow: 0px 4px 10px -2px rgba(33,33,33,0.75);
+-webkit-box-shadow: 0px 4px 10px -2px rgba(33,33,33,0.75);
+-moz-box-shadow: 0px 4px 10px -2px rgba(33,33,33,0.75);
+        margin: auto;
+        width: 100%;
+        background: #45856E;
+        /* border-radius: 5px; */
+    }
+
+    @media (max-width:576px) {     
+        .nav-new li.nav-item {
+            white-space: nowrap;
+            /* overflow: hidden; */
+            text-overflow: ellipsis;
+        }
+        .nav-new li.nav-item span.hidden {
+            display: none;
+        }
+    }
+
+    .new-card input.form-control {
+        color: #212121;
+        font-weight: bold;
+    }
+
+    .modal-body-custom input.form-control {
+        color: #212121;
+    }
+
+    .modal-body-custom input.form-control:focus {
+        box-shadow: 0  0 12px #CCDCF3;
+    }
+
+    .modal-body-custom input.form-control::placeholder {
+        font-weight: none;
+    }
+
+    .form-control:focus {
+        box-shadow: 0  0 12px #CCDCF3;
+    }
+
+    .new-card input.form-custom::placeholder{
+        color:#212121;
+        font-weight: bold;
+    }
+
+    .carousel .image-slider {
+        cursor: pointer;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    .carousel .image-slider:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+
+    .card.card-content {
+        cursor: pointer;
+    }
+
+    .card.card-content .card-header {
+        overflow: hidden;
+    }
+
+    .card.card-content .card-header .img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 30vh;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .card.card-content .card-header:hover .img {
+        transform: scale(1.1);
+    }
+
+    .card.card-content h4.title-content {
+        color: #2A5044;
+    }
+    
+    input[type="date"]::placeholder {
+        color: red;
+    }
+
+    .social-media i {
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    .social-media i:hover {
+        transform: translateY(-10%);
+    }
+
+    .btn-close-custom {
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    form .card-header-custom {
+        background: #45856E;
+        color: #ffffff;
+    }
+
+    .modal-body-custom {
+        overflow-x: hidden;
+    }
+
+    .modal-body-custom .col-form {
+        height: 100%;
+    }
+
+    .modal-body-custom .bg-img {
+        background-image: url('../assets/img/bg-login.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+        background-blend-mode: multiply;
+    }
+
+    .modal-body-custom .bg-img-login {
+        background-image: url('../assets/img/bg-login.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        width: 100%;
+        background-color: #ffffff;
+        background-blend-mode: multiply;
+    }
+
+    .footer {
+        /* height: 11vh; */
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        background: #315E50;
+        width: 100%;
+        padding-block: 5vh;
+    }
+
+    .footer-canvas {
+        height: 11vh;
+        background-image: url('../assets/brand/Vector.svg');
+        background-size: 30%;
+        background-position: center;
+        width: 100%;
+    }
+
+    .footer p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media (max-width:576px) {
+        .vector, .vector-header-login, .footer-canvas {
+            background-size: 50%;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    li.ads .img {
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    li.ads .img img {
+        transition: 0.3s;
+    }
+
+    li.ads:hover .img img {
+        transform: scale(1.1);
+    }
+
+    .bg-img-detail {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .detail-modal .modal-body {
+        background-color: #F8F8F8;
+    }    
+
+    .booble {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgb(229, 229, 229);
+    }
+
+    .booble .booble-header {
+        background: #2A5044;
+        height: 9vh;
+        padding: 20px 20px;
+        border-radius: 10px 10px 0 0;
+        color: #ffffff;
+        box-shadow: 0 0 15px rgb(229, 229, 229);
+    }
+
+    .booble .booble-body {
+        padding: 10px 20px;
+        margin-bottom: 3vh;
+    }
+
+    .img-detail {
+        height: 30vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    ul.navigation-bar li span{
+        font-size: 1.1em;
+    }
+
+    .card-responsive-new label {
+        font-size: 1em;
+    }
+
+    .harga-paket-detail {
+        font-size: 1.3em;
+    }
+
+    .loader-section {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        background-color: #315E50;
+        z-index: 99999999;
+    }
+
+    .text-responsive {
+        font-size: 1.2em;
+    }
+
+    @media (max-width: 576px) {
+        .text-responsive {
+            font-size: 0.95em;
+        }
+    }
+
+    .loader-custom {
+        width: 60px;
+        height: 60px;
+        border: 7px solid #FFC107;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+        }
+    
+        @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        } 
+
+    @media (max-width:576px) {
+        .navbar-responsive-custom {
+            overflow-x: scroll;
+            scrollbar-width: none;
+            width: 95%;
+            margin: auto;
+        }
+        .navbar-responsive-custom::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+        ul.navigation-bar li span{
+            font-size: 1.1em;
+            white-space: nowrap;
+            /* overflow-x: scroll; */
+        }
+        .btn-add-paket-responsive, .btn-login-responsive{
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 0.6vh;
+        }
+        .btn-logout-responsive, .btn-register-responsive{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .card-responsive-new {
+            width: 100%;
+        }
+        .card-responsive-new label {
+            font-size: 0.9em;
+        }
+        .card-responsive-new input::placeholder {
+            font-size: 0.9em;
+        }
+        .bg-img-login, .bg-img{
+            display: none;
+        }
+        .direct-responsive{
+            margin-bottom: 2vh;
+        }
+        .modal-body-custom {
+            width: 100%;
+            margin: auto;
+        }
+        .harga-paket-detail {
+            font-size: 1em;
+        }
+        .checkbox-custom {
+            padding: 0;
+            /* margin-left: 22px; */
+        }
+        /* .col-xl-3 .btn-custom-cari {
+            width: 100%;
+        } */
+    }
+
+    .contain {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+        .contain input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background-color: #eee;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .contain:hover input ~ .checkmark {
+        background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .contain input:checked ~ .checkmark {
+        background-color: #2196F3;
+        border-radius: 10px;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .contain input:checked ~ .checkmark:after {
+        display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .contain .checkmark:after {
+        left: 8px;
+        top: 6px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        }
+
+

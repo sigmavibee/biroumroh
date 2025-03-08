@@ -1,0 +1,178 @@
+
+/* CSS untuk kontainer utama */
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140vh;
+} */
+
+.btn-group-pkt {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Memusatkan horizontal */
+    gap: 10px;
+}
+
+.btn-check-pkt {
+    display: none;
+}
+
+.btn-check-pkt + label.btn.btn-outline-primary-pkt {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+}
+
+.btn-check-pkt:checked + label.btn.btn-outline-primary-pkt {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* .btn-login{
+    padding: 0.8vh 3vh;
+    background:#E0BE36;
+    border-radius: 10px
+}
+.btn-register {
+    padding: 0.8vh 3vh;
+    border: 1px solid #E0BE36;
+    border-radius: 10px;
+} */
+
+.label-pkt {
+    display: block;
+    margin-top: 10px;
+}
+
+.inpkt {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.subpkt {
+    margin-top: 8px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style untuk label dengan class "form-label" */
+
+
+/* Style untuk input tanggal dengan class "form-input" */
+.date-input-pkt {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 95%;
+}
+
+/* Style untuk membuat input tanggal tampilan lebih konsisten di berbagai browser */
+/* Menghilangkan tampilan default input date pada Firefox */
+.date-input-pkt::-webkit-calendar-picker-indicator {
+display: none;
+}
+
+/* Menghilangkan tampilan default input date pada Chrome dan Edge */
+.date-input-pkt::-webkit-inner-spin-button,
+.date-input-pkt::-webkit-outer-spin-button {
+display: none;
+}
+
+/* Style ketika input tanggal mendapatkan fokus */
+.date-input-pkt:focus {
+outline: none;
+box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.harga-pkt {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 95%;
+}
+
+/* Style ketika input harga mendapatkan fokus */
+.harga-pkt:focus {
+outline: none;
+box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* The container */
+.contain-pkt {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.contain-pkt input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-pkt {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+border-radius: 15px;
+background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.contain-pkt:hover input ~ .checkmark-pkt {
+background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain-pkt input:checked ~ .checkmark-pkt {
+background-color: #2196F3;
+border-radius: 15px;
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-pkt:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.contain-pkt input:checked ~ .checkmark-pkt:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain-pkt .checkmark-pkt:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
