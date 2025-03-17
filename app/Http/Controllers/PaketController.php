@@ -22,6 +22,7 @@ class PaketController extends Controller
         } else {
             if (auth()->user()->role == 'biro') {
                 $biro = Paket::where('expired_date', '>=', Carbon::now())->where('status', 'accept')->where('user_id', auth()->user()->id)->with('Biro')->latest()->paginate(4);
+                Log::info('Biro: ', ['data' => $biro->toArray()]);
                 return view('index', compact('biro', 'carousels'));
             }
             $biro = Paket::where('expired_date', '>=', Carbon::now())->where('status', 'accept')->with('Biro')->latest()->paginate(4);

@@ -198,8 +198,7 @@ body {
                                 <div class="card card-content m-0 p-0 shadow">
                                     <div class="card-header m-0 p-0">
                                         <div class="img"
-                                            style="background-image: url('{{asset('assets/img/destinasi/4.jpg')}}');">
-                                        </div>
+                                        style="background-image: url('{{asset('storage/' . $item->media)}}');">                                    </div>
                                     </div>
                                     <div class="card-body m-0 px-3 pt-3 pb-3">
                                         <!--  -->
