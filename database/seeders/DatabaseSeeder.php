@@ -47,59 +47,59 @@ class DatabaseSeeder extends Seeder
 
 
         $paket = [
-    [
-        'name' => 'Umrah Asik',
-        'media' => 'contoh',
-        'user_id' => 1,
-        'kode' => 'UA - 001',
-        'kota' => 'Surabaya',
-        'tanggal_keberangkatan' => '2012-12-24',  // Corrected date format
-        'tanggal_kepulangan' => '2012-12-25',  // Corrected date format
-        'expired_date' => '2024-12-25',  // Corrected date format
-        'status' => 'pending',
-        'bandara' => 'Soekarno Hatta',
-        'airline' => 'Lion Air',
-        'flight' => 'direct',
-        'kota_transit' => '',
-        'harga' => 1000000,
-        'tiket' => 'yes',
-        'visa' => 'yes',
-        'akomodasi' => 'yes',
-        'makan' => 'yes',
-        'umroh' => 'yes',
-        'airpot_handling' => 'yes',
-        'bus' => 'no',
-        'zam' => 'no',
-        'passport' => 'no',
-        'tour' => 'kemana ya'
-    ],
-    [
-        'name' => 'Umrah Transit',
-        'media' => 'contoh',
-        'user_id' => 1,
-        'kode' => 'UA - 001',
-        'kota' => 'Surabaya',
-        'tanggal_keberangkatan' => '2012-12-24',  // Corrected date format
-        'tanggal_kepulangan' => '2012-12-25',  // Corrected date format
-        'expired_date' => '2024-12-25',  // Corrected date format
-        'status' => 'accept',
-        'bandara' => 'Soekarno Hatta',
-        'airline' => 'Lion Air',
-        'flight' => 'transit',
-        'kota_transit' => 'transit dimana ya',
-        'harga' => 1000000,
-        'tiket' => 'no',
-        'visa' => 'no',
-        'akomodasi' => 'no',
-        'makan' => 'no',
-        'umroh' => 'no',
-        'airpot_handling' => 'yes',
-        'bus' => 'yes',
-        'zam' => 'yes',
-        'passport' => 'yes',
-        'tour' => 'transit kemana ya'
-    ]
-];
+            [
+                'name' => 'Umrah Asik',
+                'media' => 'contoh',
+                'user_id' => 1,
+                'kode' => 'UA - 001',
+                'kota' => 'Surabaya',
+                'tanggal_keberangkatan' => '2012-12-24',  // Corrected date format
+                'tanggal_kepulangan' => '2012-12-25',  // Corrected date format
+                'expired_date' => '2024-12-25',  // Corrected date format
+                'status' => 'pending',
+                'bandara' => 'Soekarno Hatta',
+                'airline' => 'Lion Air',
+                'flight' => 'direct',
+                'kota_transit' => '',
+                'harga' => 1000000,
+                'tiket' => 'yes',
+                'visa' => 'yes',
+                'akomodasi' => 'yes',
+                'makan' => 'yes',
+                'umroh' => 'yes',
+                'airpot_handling' => 'yes',
+                'bus' => 'no',
+                'zam' => 'no',
+                'passport' => 'no',
+                'tour' => 'kemana ya'
+            ],
+            [
+                'name' => 'Umrah Transit',
+                'media' => 'contoh',
+                'user_id' => 1,
+                'kode' => 'UA - 001',
+                'kota' => 'Surabaya',
+                'tanggal_keberangkatan' => '2012-12-24',  // Corrected date format
+                'tanggal_kepulangan' => '2012-12-25',  // Corrected date format
+                'expired_date' => '2024-12-25',  // Corrected date format
+                'status' => 'accept',
+                'bandara' => 'Soekarno Hatta',
+                'airline' => 'Lion Air',
+                'flight' => 'transit',
+                'kota_transit' => 'transit dimana ya',
+                'harga' => 1000000,
+                'tiket' => 'no',
+                'visa' => 'no',
+                'akomodasi' => 'no',
+                'makan' => 'no',
+                'umroh' => 'no',
+                'airpot_handling' => 'yes',
+                'bus' => 'yes',
+                'zam' => 'yes',
+                'passport' => 'yes',
+                'tour' => 'transit kemana ya'
+            ]
+        ];
 
 
         DB::table('users')->insert($user);

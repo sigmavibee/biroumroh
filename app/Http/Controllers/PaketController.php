@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Paket;
 use Carbon\Carbon;
+use Log;
 
 class PaketController extends Controller
 {
@@ -16,12 +17,12 @@ class PaketController extends Controller
         $check = Auth::user();
         $carousels = Carousel::all();
 
-        if ($check == null ) {
+        if ($check == null) {
             $biro = Paket::where('expired_date', '>=', Carbon::now())->where('status', 'accept')->with('Biro')->latest()->paginate(4);
-        }else{
+        } else {
             if (auth()->user()->role == 'biro') {
                 $biro = Paket::where('expired_date', '>=', Carbon::now())->where('status', 'accept')->where('user_id', auth()->user()->id)->with('Biro')->latest()->paginate(4);
-                return view('index', compact('biro','carousels'));
+                return view('index', compact('biro', 'carousels'));
             }
             $biro = Paket::where('expired_date', '>=', Carbon::now())->where('status', 'accept')->with('Biro')->latest()->paginate(4);
 
@@ -64,37 +65,39 @@ class PaketController extends Controller
     }
     public function store(Request $request)
     {
-        $kodeTerakhir = Paket::latest('id')->first();
-        if ($kodeTerakhir) {
-            $kodePart = explode('-', $kodeTerakhir->kode);
-            $nextNumber = (int)end($kodePart) + 1;
-        } else {
-            $nextNumber = 1;
-        }
+        Log::info('Request all data: ', $request->all());
+        try {
+            $kodeTerakhir = Paket::latest('id')->first();
+            if ($kodeTerakhir) {
+                $kodePart = explode('-', $kodeTerakhir->kode);
+                $nextNumber = (int) end($kodePart) + 1;
+            } else {
+                $nextNumber = 1;
+            }
 
-        $kodeBaru = 'HSU-' . str_pad($nextNumber, 4, '0', STR_PAD_LEFT);
+            $kodeBaru = 'HSU-' . str_pad($nextNumber, 4, '0', STR_PAD_LEFT);
 
-        $request->validate([
-            'berangkat' => 'required|date|after:tomorrow',
-            'pulang' => 'required|date|after:berangkat',
-            'bandara' => 'required',
-            'airline' => 'required',
-            'kota' => 'required',
-            'harga' => 'required',
-            'flight' => 'required|in:direct,transit',
-        ]);
+            $request->validate([
+                'berangkat' => 'required|date|after:tomorrow',
+                'pulang' => 'required|date|after:berangkat',
+                'bandara' => 'required',
+                'airline' => 'required',
+                'kota' => 'required',
+                'harga' => 'required',
+                'flight' => 'required|in:direct,transit',
+            ]);
 
-        $tiket = $request->has('tiket') ? 'yes' : 'no';
-        $visa = $request->has('visa') ? 'yes' : 'no';
-        $akomodasi = $request->has('akomodasi') ? 'yes' : 'no';
-        $makan = $request->has('makan') ? 'yes' : 'no';
-        $umroh = $request->has('umroh') ? 'yes' : 'no';
-        $airport = $request->has('airport') ? 'yes' : 'no';
-        $bus = $request->has('bus') ? 'yes' : 'no';
-        $zam = $request->has('zam') ? 'yes' : 'no';
-        $passport = $request->has('passport') ? 'yes' : 'no';
+            $tiket = $request->has('tiket') ? 'yes' : 'no';
+            $visa = $request->has('visa') ? 'yes' : 'no';
+            $akomodasi = $request->has('akomodasi') ? 'yes' : 'no';
+            $makan = $request->has('makan') ? 'yes' : 'no';
+            $umroh = $request->has('umroh') ? 'yes' : 'no';
+            $airport = $request->has('airport') ? 'yes' : 'no';
+            $bus = $request->has('bus') ? 'yes' : 'no';
+            $zam = $request->has('zam') ? 'yes' : 'no';
+            $passport = $request->has('passport') ? 'yes' : 'no';
 
-        $paket =  Paket::create([
+            $paket = Paket::create([
                 'name' => $request->name,
                 'user_id' => auth()->user()->id,
                 'status' => 'pending',
@@ -121,16 +124,20 @@ class PaketController extends Controller
                 'media' => ''
             ]);
 
-        if ($request->hasFile('media')) {
-            $foto =  $request->file('media')->store('paket');
-            $media = $request->file('media');
-            $name = 'gambarpaket' . $paket->id . '.' . $media->getClientOriginalExtension();
-            $paket->update([
-            'media' => $foto,
-            ]);
-        }
+            if ($request->hasFile('media')) {
+                $foto = $request->file('media')->store('paket', 'public');
+                $media = $request->file('media');
+                $name = 'gambarpaket' . $paket->id . '.' . $media->getClientOriginalExtension();
+                $paket->update([
+                    'media' => $foto,
+                ]);
+            }
 
-        return redirect('/');
+            return redirect('/');
+        } catch (\Exception $e) {
+            Log::error('Failed to save paket: ' . $e->getMessage());
+            return back()->withErrors(['error' => 'Failed to save paket: ' . $e->getMessage()])->withInput();
+        }
     }
 
 
