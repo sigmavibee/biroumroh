@@ -72,6 +72,10 @@ class DashboardController extends Controller
             $paket->update([
                 'media' => $foto,
             ]);
+        } else {
+            $paket->update([
+                'status' => $request->status,
+            ]);
         }
         return redirect('/dashboard/paket');
     }

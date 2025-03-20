@@ -198,7 +198,8 @@ body {
                                 <div class="card card-content m-0 p-0 shadow">
                                     <div class="card-header m-0 p-0">
                                         <div class="img"
-                                        style="background-image: url('{{asset('storage/' . $item->media)}}');">                                    </div>
+                                        style="background-image: url('{{ asset('storage/' . $item->media) }}');">
+                                    </div>
                                     </div>
                                     <div class="card-body m-0 px-3 pt-3 pb-3">
                                         <!--  -->
@@ -275,7 +276,7 @@ body {
                     <div class="modal-content" style="border-radius: 10px;">
                         <div class="modal-body p-0 overflow-x-hidden">
                             <div class="detail-modal-bg"
-                                style="background: url('{{asset('assets/img/destinasi/4.jpg')}}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                                style="background: url('{{asset('storage/' . $item->media)}}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
                             </div>
                             <div class="container">
                                 <div class="row justify-content-end">
@@ -499,7 +500,7 @@ body {
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-3">
                     <div class="card card-content m-0 p-0 shadow">
                         <div class="card-header m-0 p-0">
-                            <div class="img" style="background-image: url('{{asset('assets/img/destinasi/4.jpg')}}');">
+                            <div class="img" style="background-image: url('{{asset('storage/' . $item->media)}}');">
                             </div>
                         </div>
                         <div class="card-body m-0 px-3 pt-3 pb-3">
@@ -568,7 +569,7 @@ body {
             <div class="modal-content" style="border-radius: 10px;">
                 <div class="modal-body p-0 overflow-x-hidden">
                     <div class="detail-modal-bg"
-                        style="background: url('{{asset('assets/img/destinasi/4.jpg')}}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                        style="background: url('{{asset('storage/' . $item->media)}}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
                     </div>
                     <div class="container">
                         <div class="row justify-content-end">

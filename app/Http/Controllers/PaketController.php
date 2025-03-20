@@ -127,8 +127,6 @@ class PaketController extends Controller
 
             if ($request->hasFile('media')) {
                 $foto = $request->file('media')->store('paket', 'public');
-                $media = $request->file('media');
-                $name = 'gambarpaket' . $paket->id . '.' . $media->getClientOriginalExtension();
                 $paket->update([
                     'media' => $foto,
                 ]);
