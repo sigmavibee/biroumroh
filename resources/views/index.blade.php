@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dropify/dist/css/dropify.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Hana Safar</title>
-    <link rel="shortcut icon" href="/assets/brand/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/brand/favicon.ico" type="image/x-icon">
 </head>
 <style>
 body {
@@ -69,7 +69,7 @@ body {
             <nav class="navbar navbar-expand fixed-top navbar-dark nav-new mt-5 px-0 py-2" style="max-height: 9vh;">
                 <div class="container">
                     <a class="navbar-brand fs-4 fw-bold navbar-brand-custom text-light" href="#">
-                        <img src="assets/brand/umroh-logo.png" alt="Bootstrap" class="img-brand" style="">
+                        <img src="/brand/umroh-logo.png" alt="Bootstrap" class="img-brand" style="">
                         <span class="" style="text-shadow: 0px 0px 10px #212121;">Hana Safar</span>
                     </a>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -106,7 +106,7 @@ body {
     </div>
     <div class="scrollbar-custom">
         <div class="wrapper d-flex align-items-center"
-            style="background-image: url('/assets/img/bgdua.jpg">
+            style="background-image: url('/img/bgdua.jpg">
             <div class="container d-flex justify-content-center flex-column ">
                 <h1 class="text-white welcome-text-custom text-center fw-bold mb-4">Selalu Membantu<br>Perjalanan Ibadah
                     Anda </h1>
@@ -170,14 +170,14 @@ body {
 
                     {{-- CAROUSEL --}}
 
-                    {{-- @foreach ($carousels as $carousel)
+                    @foreach ($carousels as $carousel)
                     <li class="ads">
                         <div class="img">
-                            <img src="{{asset('storage/' . $carousel->media)}}"
+                            <img src="/storage/ . $carousel->media"
                             alt="">
                         </div>
                     </li>
-                    @endforeach --}}
+                    @endforeach
                 </ul>
                 <button id="arrow-left" class="position-absolute bg-warning start-0 top-50 translate-middle-y"><i
                         class="fas fa-arrow-left"></i></button>
