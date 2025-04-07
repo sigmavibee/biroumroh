@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dropify/dist/css/dropify.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Hana Safar</title>
-    <link rel="shortcut icon" href="{{asset('assets/brand/favicon.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/brand/favicon.ico" type="image/x-icon">
 </head>
 <style>
 body {
@@ -69,7 +69,7 @@ body {
             <nav class="navbar navbar-expand fixed-top navbar-dark nav-new mt-5 px-0 py-2" style="max-height: 9vh;">
                 <div class="container">
                     <a class="navbar-brand fs-4 fw-bold navbar-brand-custom text-light" href="#">
-                        <img src="{{asset('assets/brand/umroh-logo.png')}}" alt="Bootstrap" class="img-brand" style="">
+                        <img src="assets/brand/umroh-logo.png" alt="Bootstrap" class="img-brand" style="">
                         <span class="" style="text-shadow: 0px 0px 10px #212121;">Hana Safar</span>
                     </a>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -106,7 +106,7 @@ body {
     </div>
     <div class="scrollbar-custom">
         <div class="wrapper d-flex align-items-center"
-            style="background-image: url('{{asset('assets/img/bgdua.jpg')}}'); ">
+            style="background-image: url('/assets/img/bgdua.jpg">
             <div class="container d-flex justify-content-center flex-column ">
                 <h1 class="text-white welcome-text-custom text-center fw-bold mb-4">Selalu Membantu<br>Perjalanan Ibadah
                     Anda </h1>
@@ -198,7 +198,7 @@ body {
                                 <div class="card card-content m-0 p-0 shadow">
                                     <div class="card-header m-0 p-0">
                                         <div class="img"
-                                        style="background-image: url('{{ asset('storage/' . $item->media) }}');">
+                                        style="background-image: url('/storage/' . $item->media)">
                                     </div>
                                     </div>
                                     <div class="card-body m-0 px-3 pt-3 pb-3">
@@ -276,7 +276,7 @@ body {
                     <div class="modal-content" style="border-radius: 10px;">
                         <div class="modal-body p-0 overflow-x-hidden">
                             <div class="detail-modal-bg"
-                                style="background: url('{{asset('storage/' . $item->media)}}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                                style="background: url('/storage/' . $item->media'); background-repeat: no-repeat; background-position: center; background-size: cover;">
                             </div>
                             <div class="container">
                                 <div class="row justify-content-end">
@@ -500,7 +500,7 @@ body {
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-3">
                     <div class="card card-content m-0 p-0 shadow">
                         <div class="card-header m-0 p-0">
-                            <div class="img" style="background-image: url('{{asset('storage/' . $item->media)}}');">
+                            <div class="img" style="background-image: url('/storage/' . $item->media)">
                             </div>
                         </div>
                         <div class="card-body m-0 px-3 pt-3 pb-3">
@@ -569,7 +569,7 @@ body {
             <div class="modal-content" style="border-radius: 10px;">
                 <div class="modal-body p-0 overflow-x-hidden">
                     <div class="detail-modal-bg"
-                        style="background: url('{{asset('storage/' . $item->media)}}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                        style="background: url('/storage/' . $item->media)'); background-repeat: no-repeat; background-position: center; background-size: cover;">
                     </div>
                     <div class="container">
                         <div class="row justify-content-end">
