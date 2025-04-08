@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     {{-- CSS build --}}
-<link href="{{ asset('build/assets/app-041e359a.css') }}" rel="stylesheet">
+<link href="{{ asset('build/assets/app-d28c34c2.css') }}" rel="stylesheet">
 
 {{-- Bootstrap --}}
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
