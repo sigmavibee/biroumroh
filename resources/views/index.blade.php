@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     {{-- CSS build --}}
-<link href="{{ asset('build/assets/app-d28c34c2.css') }}" rel="stylesheet">
+<link href="/build/assets/app-d28c34c2.css" rel="stylesheet">
 
 {{-- Bootstrap --}}
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -174,7 +174,7 @@ body {
 
                     {{-- CAROUSEL --}}
 
-                    {{-- @foreach ($carousels as $carousel)
+                    @foreach ($carousels as $carousel)
                     <li class="ads">
                         <div class="img">
                             <img src="/storage/ . $carousel->media"
@@ -188,7 +188,7 @@ body {
                 <button id="arrow-right" class="position-absolute bg-warning end-0 top-50 translate-middle-y"><i
                         class="fas fa-arrow-right"></i></button>
             </div>
-            <span class="my-5"></span> --}}
+            <span class="my-5"></span>
 
             @if (!isset($results))
             <div class="container my-5">
