@@ -290,6 +290,103 @@ pre code {
   word-break: normal;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar-brand img {
+  width: 50px;
+  border-radius: 5%;
+}
+
+.wrapper {
+  background-image: url('../img/mecca.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+
+.navbar-brand b {
+  background-image: linear-gradient(to right, black, #956C10);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 24px;
+}
+
+
+
+.navigation-bar {
+  padding: 1px 12px;
+  background: rgba(15, 41, 77, .8);
+  backdrop-filter: blur(6px);
+  margin-bottom: -13px;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+.navigation-bar li {
+  margin: 12px;
+}
+
+label {
+  font-size: 12px;
+}
+
+.home-wrapper {
+  width: 100%;
+  margin: 0;
+  background: #fff;
+  display: inline-block;
+  min-height: 600px;
+  margin-top: -50px;
+  position: relative;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding-top: 24px;
+}
+
+
+
+.arrow-left, .arrow-right {
+  border: none;
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+  background-color: #268ab8;
+}
+
+.ads .img img {
+  width: 340px;
+  height: 170px;
+  object-fit: cover;
+}
+.home-wrapper .carousel {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) -12px);
+  gap: 23px;
+  max-width: 1100px;
+  width: 100%;
+}
+.carousel .ads {
+  height: 170px;
+  scroll-behavior: smooth;
+}
+button.position-absolute {
+  border: none;
+  background-color: #459cee;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+}
+
+
 code {
   font-size: 0.875em;
   color: var(--cui-code-color);

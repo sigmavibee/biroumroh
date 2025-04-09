@@ -11,7 +11,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     {{-- Custom CSS --}}
-    <link rel="stylesheet" href="{{ asset('build/assets/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom-paket.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom-biro.css') }}">
