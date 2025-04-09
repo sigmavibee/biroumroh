@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- CSS build --}}
 <link href="https://hanasafar.up.railway.app/build/assets/app-d28c34c2.css" rel="stylesheet">
 
@@ -73,7 +74,7 @@ body {
             <nav class="navbar navbar-expand fixed-top navbar-dark nav-new mt-5 px-0 py-2" style="max-height: 9vh;">
                 <div class="container">
                     <a class="navbar-brand fs-4 fw-bold navbar-brand-custom text-light" href="#">
-                        <<img src="{{ asset('/assets/brand/umroh-logo.png') }}" alt="Bootstrap" class="img-brand">
+                        <img src="{{ asset('/assets/brand/umroh-logo.png') }}" alt="Bootstrap" class="img-brand">
                         <span class="" style="text-shadow: 0px 0px 10px #212121;">Hana Safar</span>
                     </a>
                     <div class="collapse navbar-collapse" id="navbarNav">
