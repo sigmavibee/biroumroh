@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- CSS build --}}
-<link href="https://hanasafar.up.railway.app/build/assets/app-d28c34c2.css" rel="stylesheet">
+    <link href="https://hanasafar.up.railway.app/build/assets/app-d28c34c2.css" rel="stylesheet">
 
-{{-- Bootstrap --}}
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {{-- Bootstrap --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-{{-- Custom CSS --}}
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-<link rel="stylesheet" href="{{ asset('css/custom-paket.css') }}">
-<link rel="stylesheet" href="{{ asset('css/custom-biro.css') }}">
+    {{-- Custom CSS --}}
+    <link rel="stylesheet" href="{{ asset('build/assets/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom-paket.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom-biro.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -175,14 +175,14 @@ body {
 
                     {{-- CAROUSEL --}}
 
-                    @foreach ($carousels as $carousel)
+                    {{-- @foreach ($carousels as $carousel)
                     <li class="ads">
                         <div class="img">
                             <img src="/storage/ . $carousel->media"
                             alt="">
                         </div>
                     </li>
-                    @endforeach
+                    @endforeach --}}
                 </ul>
                 <button id="arrow-left" class="position-absolute bg-warning start-0 top-50 translate-middle-y"><i
                         class="fas fa-arrow-left"></i></button>
