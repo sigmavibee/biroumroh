@@ -155,7 +155,7 @@ body {
                                         <input type="text" name="price" class="form-control" placeholder="">
                                     </div>
                                     <div class="col-xl-2 col-sm-12 mx-auto text-center">
-                                        <label for="" class="mb-1" style="color:transparent;">cek</label>
+                                        <label for="" class="mb-1" style="color:transparent;"></label>
                                         <div class="d-grid text-center">
                                             <button type="submit"
                                                 class="d-flex btn btn-warning fw-bold text-dark text-center">Cari <i
